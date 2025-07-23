@@ -1,2 +1,2 @@
 # students_management_system
-A simpe student database project using Postgresql
+A simple student database project using Postgresql
