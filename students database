@@ -1,0 +1,23 @@
+CREATE TABLE students(
+id SERIAL PRIMARY KEY,
+name VARCHAR(255) NOT NULL,
+age INT,
+course VARCHAR(100)NOT NULL,
+marks INT,
+joining_date DATE 
+);
+INSERT INTO students(name,age,course,marks,joining_date)
+VALUES('Anjali',20,'BCA',85,'2024-04-17'),
+('Rahul',21,'b.tech',90,'2024-09-08'),
+('Meena',19,'B.A',80,'2024-01-09'),
+('Vijay',22,'EEE',75,'2023-09-01');
+
+SELECT*FROM students;
+SELECT name,marks FROM students WHERE marks>75;
+SELECT COUNT (DISTINCT course)FROM students;
+SELECT * FROM students ORDER BY name; 
+SELECT * FROM students ORDER BY name DESC; 
+UPDATE students SET age=20 WHERE name='Vijay';
+SELECT * FROM students; 
+DELETE FROM students WHERE name='Meena';
+SELECT * FROM students; 
